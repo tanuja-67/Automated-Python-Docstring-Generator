@@ -14,6 +14,14 @@ This project helps developers improve Python code documentation by:
 * Inserting approved docstrings into original source code
 * Exporting consolidated documentation
 
+## project links
+
+Presentation:
+https://drive.google.com/file/d/1F_RMPj5B9c-chiIOiO6Xf8VeMyVEuIa2/view?usp=sharing
+
+Documentation:
+https://drive.google.com/file/d/13B6iu7F_SESOaVNr7mle7UoXnu8gBwnY/view?usp=sharing
+
 
 ## Features
 
