@@ -25,22 +25,6 @@ This project helps developers improve Python code documentation by:
 * Multi-file upload support
 * Export options: Markdown, Text, and Python format
 
-## Project Structure
-
-.
-├── app.py
-├── requirements.txt
-├── services/
-│   ├── ast_parser.py
-│   ├── docstring_generator.py
-│   ├── validator.py
-│   ├── coverage.py
-│   ├── api_manager.py
-│   ├── code_inserter.py
-│   └── exporter.py
-└── utils/
-    └── file_utils.py
-
 ## Installation
 
 ### 1. Install dependencies
