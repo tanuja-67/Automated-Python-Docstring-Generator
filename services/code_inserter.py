@@ -49,7 +49,13 @@ def insert_docstring(code: str, function_name: str, new_docstring: str, class_na
     else:
         quote = '"""'
     
-    docstring_block = f'{indent_str}{quote}{formatted_docstring}{quote}\n'
+    # Format docstring: closing quotes on separate line for multi-line docstrings (PEP 257 D209)
+    if '\n' in formatted_docstring:
+        # Multi-line: closing quotes on separate line
+        docstring_block = f'{indent_str}{quote}{formatted_docstring}\n{indent_str}{quote}\n'
+    else:
+        # Single-line: keep on same line
+        docstring_block = f'{indent_str}{quote}{formatted_docstring}{quote}\n'
     
     # Find where to insert the docstring (after the def line)
     def_line = target_func.lineno - 1
